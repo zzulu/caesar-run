@@ -1,12 +1,21 @@
 // Copyright (c) 2014 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', onDocumentLoad);
+
+function onDocumentLoad() {
   new Runner('.interstitial-wrapper');
-});
+}
 
 (function() {
 'use strict';
+/**
+ * Compare Date
+ */
+function checkBday(dateObj) {
+  return dateObj.getMonth() === 7 && dateObj.getDate() === 8; // Oct 8
+}
+
 /**
  * T-Rex runner.
  * @param {string} outerContainerId Outer containing element id.
@@ -107,7 +116,7 @@ var ARCADE_MODE_URL = 'chrome://dino/';
  */
 Runner.config = {
   DISABLED: false,
-  BDAY: false,
+  BDAY: checkBday(new Date()),
   ACCELERATION: 0.001,
   BG_CLOUD_SPEED: 0.2,
   BOTTOM_PAD: 10,
