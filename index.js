@@ -891,7 +891,8 @@ Runner.prototype = {
    * @return {boolean}
    */
   isArcadeMode: function() {
-    return document.title == ARCADE_MODE_URL;
+    // return document.title == ARCADE_MODE_URL;
+    return location.search === '?arcade';
   },
 
   /**
