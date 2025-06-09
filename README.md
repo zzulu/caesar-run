@@ -1,6 +1,6 @@
 # Caesar Run
 
-Caesar from [앙영](https://www.instagram.com/angyeong93/)
+Caesar from [앙영](https://www.instagram.com/enfp_angyeong/)
 
 Based on T-Rex runner in [Chromium offline page](https://source.chromium.org/chromium/chromium/src/+/master:components/neterror/resources/offline.js)
 
